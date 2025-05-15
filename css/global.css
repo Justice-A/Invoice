@@ -1,0 +1,42 @@
+:root {
+  /*colors*/
+  --white-color: #fff;
+  --dark-color: #000;
+  --primary-color: #7c5dfa;
+  --primary-color-2: rgb(247, 238, 238);
+  --secondary-color: #373b53;
+  --secondary-color-2: #8892b7;
+  /*fonts*/
+  --font-family: poppins;
+  --font-s: 0.875rem;
+  --font-m: 1rem;
+  --font-lg: 2.625rem;
+}
+/* Default light mode variables */
+:root {
+  --background-color: #f8f8fb;
+  --text-color: #111;
+  --card-bg: #fff;
+}
+
+/* Dark mode overrides */
+body.dark-mode {
+  --background-color: #1e2139;
+  --text-color: #fff;
+  --card-bg: #252945;
+}
+
+/* Apply these variables */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.invoice-card,
+.main-content,
+.sidebar,
+.new-invoice,
+.pending-content {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
