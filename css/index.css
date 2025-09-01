@@ -29,7 +29,14 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  border-radius: 8px;
+
+  /* specific corners */
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 0px;
+
+  /* make sure the others stay sharp */
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 8px;
 }
 
 .fa-solid {

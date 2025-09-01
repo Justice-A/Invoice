@@ -20,9 +20,11 @@
   <body>
     <main class="main-container">
       <aside class="sidebar">
-        <div class="logo"></div>
+        <div class="logo"><img src="./images/36.jpg" class="logo" /></div>
         <i class="fa-solid fa-moon"></i>
-        <div class="user-profile"></div>
+        <div class="user-profile">
+          <img src="./images/profile.jpg" class="user-profile" />
+        </div>
       </aside>
 
       <section class="main-content">
@@ -52,7 +54,11 @@
             <button id="newInvoice" class="new">+ New Invoice</button>
           </div>
         </div>
-        <div class="invoice-cards" id="invoice-cards"></div>
+        <div
+          class="invoice-cards"
+          id="invoice-cards"
+          aria-placeholder="Your invoices will apear here"
+        ></div>
       </section>
 
       <section id="sectionOne" class="new-invoice">
